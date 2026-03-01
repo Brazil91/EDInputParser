@@ -1,0 +1,24 @@
+eingang:
+  stakeholder1:
+    path1: eingang/xxx
+
+ausgang:
+  stakeholder1:
+    path1: ausgang/xxx
+
+specificOrdersInputType:
+  "2": specificWOs
+  "1": specificOJNs
+
+sftpProcedures:
+  "1": "specificOrders"
+  "2": "randomSample"
+  "3": "customsProcedureIssueBool"
+  "4": "commodityIssueBool"
+  "5": "stakeholder1PONandNON"
+
+customer:
+  "1": "stakeholder2"
+
+customerPath:
+  stakeholder2: eingang/stakeholder2

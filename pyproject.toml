@@ -1,0 +1,44 @@
+[project]
+    name = "OSISInputParser"
+    authors = [{name= "brazil91", email= "brazil.hhcity91@gmail.com"}]
+    version = "0.9.0"
+    description = "This App contains different utilities for data processing and visualization."
+    license = {text = "MIT"}
+    readme = "README.md"
+    requires-python = ">=3.12"
+    dependencies = [
+        "termcolor (>=3.1.0,<4.0.0)",
+        "tqdm (>=4.67.1,<5.0.0)",
+        "icecream (>=2.1.6,<3.0.0)",
+        "datetime (>=5.5,<6.0)",
+        "pathlib (>=1.0.1,<2.0.0)",
+        "pyyaml (>=6.0.2,<7.0.0)",
+        "pandas (>=2.3.1,<3.0.0)",
+        "paramiko (>=4.0.0,<5.0.0)",
+        "pyperclip (>=1.9.0,<2.0.0)",
+        "dotenv (>=0.9.9,<0.10.0)",
+        "bril @ git+https://github.com/Brazil91/bril.git",
+    ]
+
+[tool.poetry]
+    name = "OSISInputParser"
+    version = "0.9.0"
+    description = "Some utilities"
+    authors = ["brazil91 <blazin_brazil@hotmail.de>"]
+    readme = "README.md"
+    license = "MIT"
+    packages = [{ include = "osisinputparser", from = "src" }]
+    classifiers = [
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent"
+    ]
+
+[tool.poetry.dependencies]
+    python = ">=3.12"
+    bril = { git = "ssh://git@github.com/Brazil91/bril.git", tag = "v1.6.15" }
+
+[build-system]
+    requires = ["poetry-core>=2.0.0,<3.0.0"]
+    build-backend = "poetry.core.masonry.api"
+
